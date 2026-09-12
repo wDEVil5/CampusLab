@@ -31,8 +31,7 @@ const PUBLIC_MOBILE_ITEMS: MobileNavItem[] = [
  * organizaciones...) dejan de forzarse a dinámicas solo por el header.
  *
  * Costo del cambio: un instante (mientras resuelve `auth.getUser()` + perfil)
- * en el que se muestra un esqueleto en vez del botón real — decisión tomada
- * con el dueño del producto.
+ * en el que se muestra un esqueleto en vez del botón real.
  */
 export function SiteAuthStatus() {
   const [user, setUser] = useState<SessionUser | null>(null);
